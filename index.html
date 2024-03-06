@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <title>Document</title>
+</head>
+<body>
+
+ <div class="main">
+  <div class="page1">
+      <h1>PORSCHE 9S11</h1>
+      <div class="top">
+          <div class="header container" >
+
+              <div class="logo">
+                  <h2>PORSCHE<span> 911</span></h2>
+              </div>
+              <div class="nav-link">
+                  <ul>
+                      <li><a href="#" style="color:white;">Home</a></li>
+                      <li><a href="#">Variants</a></li>
+                      <li><a href="#">Shop</a></li>
+                      <li><a href="#">Support</a></li>
+                  </ul>
+              </div>
+              <div class="back">
+                  <a href="#" class="btn">CONTACT</a>
+              </div>
+          </div>
+          <div class="content">
+              <h2>VTG-turbocharged</h2>
+              <h3>PORSCHE 911 2024</h3>
+          </div>
+          <div class="Porsche">
+              <span>H</span>
+              <span>T</span>
+              <span>A</span>
+              <span>S</span>
+              <span>A</span>
+              <span>R</span>
+              <span>P</span>
+              <span></span>
+              <span style="color:#ecfffd;">I</span>
+              <span style="color:#ecfffd;">R</span>
+              <span style="color:#ecfffd;">A</span>
+              <span style="color:#ecfffd;">H</span>
+              
+          </div>
+      </div>
+      <div class="footer-up">
+          <div class="image">
+              <img src="911ModelImage 1.png" alt="">
+          </div>
+          <div class="footer-content">
+              <p>Porsche 911 GT3 is the petrol variant in the Porsche 911 lineup and is priced at Rs. 2.55 Crore. It gives a mileage of 9 kmpl. Porsche 911 GT3 is available in Automatic (DCT) transmission and offered in 8 colours: Black, Gentian Blue Metallic, Jet Black Metallic, Agate Grey Metallic, GT Silver Metallic, Guards Red, White and Racing Yellow.</p>
+              <a href="#" class="btn btn-primary">PROCURE</a>
+          </div>
+
+          <div class="About">
+              <span>TURBO Engine |</span>
+              <span>60 miles per hour |</span>
+              <span>BLACK HOURSE |</span>
+              <span>02.55crore|</span>
+          </div>
+      </div>
+  </div>
+</div> 
+<script>
+ var tl = gsap.timeline()
+
+
+tl.from(".logo h2, .nav-link ul, .back",{
+    y:-100,
+    duration:1,
+    delay:0.5,
+    opacity:0,
+    stagger:0.5
+})
+
+tl.from(".image img",{
+    x:-50,
+    duration:0.4,
+    opacity:0,
+    blur:1,
+    scale:0.8
+})
+
+tl.from(".content h2, .content h3",{
+    y:50,
+    duration:0.8,
+    opacity:0,
+    stagger:0.5
+})
+
+tl.from(".footer-content",{
+    x:100,
+    duration:0.8,
+    opacity:0,
+    stagger:0.5
+})
+
+tl.from(".About span",{
+    y:100,
+    duration:0.5,
+    opacity:0,
+    stagger:0.3
+})
+</script>
+</body>
+</html>
